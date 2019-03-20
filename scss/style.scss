@@ -9,7 +9,7 @@ header{
 		background: linear-gradient(rgba(0,0,0, .4), rgba(0,0,0, .5)), url(../images/header-img.jpeg)
 		no-repeat center center/cover;
 
-/* navbar */
+		/* navbar */
 		.nav-menu {
 				background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5));
 				padding:20px;
@@ -52,28 +52,28 @@ header{
 				padding:5px 30px;
 				background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.7));
 		}
-/* end of navbar */
+		/* end of navbar */
 
-/* banner */
+		/* banner */
 
-.banner {
-		position:absolute;
-		top:50%;
-		left:50%;
-		transform:translate(-50%, -50%);
-		width:80%;
+		.banner {
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%, -50%);
+				width:80%;
 
-		.banner-heading{
-				animation-name:anim;
-				animation-duration:2s;
+				.banner-heading{
+						animation-name:anim;
+						animation-duration:2s;
+				}
+				.banner-par{
+						animation-name:anim;
+						animation-duration:2s;
+						animation-delay: .5s;
+						animation-fill-mode:backwards;
+				}
 		}
-		.banner-par{
-				animation-name:anim;
-				animation-duration:2s;
-				animation-delay: .5s;
-				animation-fill-mode:backwards;
-		}
-}
 
 }
 @keyframes anim {
@@ -90,3 +90,180 @@ header{
 
 
 /* end of header */
+
+
+// mission 
+.mission {
+		background:#151820;
+
+		.underline {
+				width:150px;
+				border:3px solid #eee;
+				margin:auto;
+		}
+
+		.fromLeft{
+				animation-name: fromLeft;
+				animation-duration:3s;
+		}
+		.fromRight{
+				animation-name: fromRight;
+				animation-duration:3s;
+		}
+
+
+
+}
+// endof mission
+@keyframes fromLeft {
+		0% {
+				transform:translateX(-120px);
+				opacity:0;
+		}
+		100% {
+				transform: translateX(0);
+				opacity:1;
+		}
+}
+@keyframes fromRight {
+		0% {
+				transform:translateX(30px);
+				opacity:0;
+		}
+		100% {
+				transform: translateX(0);
+				opacity:1;
+		}
+}
+
+
+/* collection */
+
+.card-shadow{
+		box-shadow: 5px 8px 20px #444;
+}
+
+.heading{
+		position:absolute;
+		top:70%;
+		right:0;
+		font-size:14px;
+		letter-spacing:1px;
+		background:#222;
+		width:70%;
+		cursor:pointer;
+		opacity:.7;
+		transition:all .5s;
+}
+
+.heading:hover {
+		opacity:1;
+		transform:translate(-2px);
+		box-shadow: 5px 8px 20px #444;
+}
+
+/* end of collection */
+
+
+/* Gallery */
+.underline-dark {
+		width:150px;
+		border:3px solid #888;
+		margin:auto;
+}
+/* end of collection */
+
+.gallery-list-item{
+		color:#777;
+		cursor:pointer;
+		user-select:none;
+}
+.active-item{
+		color:#70aed2;
+}
+
+
+.customers {
+		background:#151f20;
+}
+
+
+
+
+
+///////////////
+//  priting  //
+///////////////
+
+.card-1, .card-2,.card-3,{
+		background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.5)),url(../images/pricing-card-bg.jpeg) center no-repeat /cover;
+		box-shadow:7px 18px 50px #555;
+		transition: all .3s;
+}		
+.moveFromLeft{
+		animation-name:moveFromLeft;
+		animation-duration:2s;
+}
+.moveFromRight{
+		animation-name:moveFromRight;
+		animation-duration:2s;
+}
+.moveFromBottom{
+		animation-name:moveFromBottom;
+		animation-duration:2s;
+}
+
+.card-list-item {
+		border-bottom: 1px groove #eee;
+}
+
+.price-card-button {
+		background:#f5593d;
+		width:130px;
+		border-radius:25px;
+		box-shadow:5px 8px 18px #000;
+		transition: all .2s;
+}
+.price-card-button:hover {
+		background:#f9793d;
+		transform:translateY(-2px);
+}
+
+.card-1:hover {
+		transform:translateY(-2px);
+}
+
+@keyframes moveFromLeft{
+		0% {
+				transform:translateX(-100px);
+				opacity:0;
+		}
+		100% {
+				transform:translateX(0);
+				opacity:1;
+		}
+}
+@keyframes moveFromRight{
+		0% {
+				transform:translateX(100px);
+				opacity:0;
+		}
+		100% {
+				transform:translateX(0);
+				opacity:1;
+		}
+}
+@keyframes moveFromBottom{
+		0% {
+				transform:translateY(100px);
+				opacity:0;
+		}
+		100% {
+				transform:translateY(0);
+				opacity:1;
+		}
+}
+
+///////////////
+//  end of priting//
+///////////////
