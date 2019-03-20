@@ -183,6 +183,7 @@ header .banner .banner-par {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../images/pricing-card-bg.jpeg) center no-repeat/cover;
   box-shadow: 7px 18px 50px #555;
   transition: all .3s;
+	max-width:400px;
 }
 
 .moveFromLeft {
