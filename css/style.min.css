@@ -6,12 +6,48 @@ body {
 header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../images/header-img.jpeg) no-repeat center center/cover;
+  /* navbar */
+  /* end of navbar */
+  /* banner */
 }
 
-/* navbar */
-/* end of navbar */
-/* banner */
-.banner {
+header .nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  padding: 20px;
+}
+
+header .nav-menu .menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s;
+}
+
+header .nav-menu .menu-item:hover {
+  color: #7083d2;
+}
+
+header .nav-menu .line1, header .nav-menu .line2, header .nav-menu .line3 {
+  width: 32px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+header .nav-menu .change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+header .nav-menu .change .line2 {
+  transform: rotate(360deg);
+  opacity: 0;
+}
+
+header .nav-menu .change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+header .banner {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -19,12 +55,12 @@ header {
   width: 80%;
 }
 
-.banner .banner-heading {
+header .banner .banner-heading {
   animation-name: anim;
   animation-duration: 2s;
 }
 
-.banner .banner-par {
+header .banner .banner-par {
   animation-name: anim;
   animation-duration: 2s;
   animation-delay: .5s;
