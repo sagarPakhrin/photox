@@ -54,7 +54,7 @@ header .nav-menu .change .line3 {
 
 header .custom-navbar {
   padding: 5px 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(black, black);
 }
 
 header .banner {
@@ -182,8 +182,7 @@ header .banner .banner-par {
 .card-1, .card-2, .card-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(../images/pricing-card-bg.jpeg) center no-repeat/cover;
   box-shadow: 7px 18px 50px #555;
-  transition: all .3s;
-	max-width:400px;
+  transition: all .5s;
 }
 
 .moveFromLeft {
@@ -218,8 +217,8 @@ header .banner .banner-par {
   transform: translateY(-2px);
 }
 
-.card-1:hover {
-  transform: translateY(-2px);
+.card-1:hover, .card-2:hover, .card-3:hover {
+  transform: translateY(-3px);
 }
 
 @keyframes moveFromLeft {

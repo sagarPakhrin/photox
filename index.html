@@ -20,7 +20,7 @@
 		<body>
 
 				<!-- header  -->
-				<header>
+				<header id="homeSection">
 						<!--  navbar -->
 						<nav class="navbar navbar-expand-lg fixed-top nav-menu">
 								<a class="navbar-brand text-light text-uppercase" href="#">
@@ -35,13 +35,15 @@
 
 								<div class="collapse navbar-collapse justify-content-end" id="myNavBar">
 										<ul class="navbar-nav">
-												<li class="nav-item "> <a class="nav-link m-2 menu-item nav-active" href="#">Home</a> </li>
+												<li class="nav-item "> <a class="nav-link m-2 menu-item nav-active"
+																href="#homeSection">Home</a> </li>
 												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#missionSection">Mission</a> </li>
-												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#">Collection</a> </li>
-												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#">Gallery</a> </li>
-												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#">Customers</a> </li>
-												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#">Pricing</a> </li>
-												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#">Contact</a> </li>
+												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#collectionSection">Collection</a> </li>
+												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#gallerySection">Gallery</a> </li>
+												<li class="nav-item"> <a class="nav-link m-2 menu-item"
+																href="#customersSection">Customers</a> </li>
+												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#pricingSection">Pricing</a> </li>
+												<li class="nav-item"> <a class="nav-link m-2 menu-item" href="#contactSection">Contact</a> </li>
 										</ul>
 
 								</div>
@@ -122,12 +124,12 @@
 				<!-- end of mission -->
 
 				<!-- collections -->
-				<section class="bg-secondary py-4">
+				<section class="bg-secondary py-4" id="collectionSection">
 						<div class="container-fluid">
 								<!-- title -->
 								<div class="row text-white text-center">
 										<div class="col-md 4">
-												<h1 class="display-4 mb-4">Collection</h1>
+												<h1 class="display-4 my-5">Collection</h1>
 												<div class="underline mb-4"></div>
 												<p class="lead">
 												Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -192,11 +194,11 @@
 
 
 				<!-- Gallery -->
-				<section class="py-5">
+				<section class="py-5" id="gallerySection">
 						<div class="container-fluid">
 								<div class="row text-muted text-center">
 										<div class="col-md 4">
-												<h1 class="display-4 mb-4">Gallery</h1>
+												<h1 class="display-4 my-4">Gallery</h1>
 												<div class="underline-dark mb-4"></div>
 												<p class="lead">
 												Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
@@ -240,7 +242,7 @@
 
 				<!-- end of gallery -->
 
-				<section class="p-5 customers">
+				<section class="p-5 customers" id="customersSection">
 						<div class="container-fluid">
 								<div class="row text-white text-center">
 										<div class="col m-4">
@@ -329,7 +331,7 @@
 
 
 				<!-- pricing -->
-				<section class="bg-light text-center py-5">
+				<section class="bg-light text-center py-5" id="pricingSection">
 						<div class="container-fluid">
 								<!-- Title -->
 								<div class="row text-muted text-center">
